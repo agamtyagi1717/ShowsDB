@@ -11,6 +11,7 @@
 
 body{
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 img{
@@ -66,6 +67,16 @@ img{
 .searchbar{
   width: 100%;
   margin: 2rem 0;
+  
+  margin-top: 240px;
+  transition: all 0.6s ease-out;
+}
+
+.searchbar_onClick{
+  width: 100%;
+  margin: 2rem 0;
+  
+  transition: all 0.6s ease-out;
 }
 
 .searchBar_form > input{
@@ -156,6 +167,7 @@ img{
 .singleshow__genre {
   display: inline-block;
   border-radius: 15px;
+  /* border: 2px black solid; */
   margin: 0.5rem 1rem 0.5rem 0;
   padding: 10px 17px;
   background: #ff7e96;
@@ -164,6 +176,13 @@ img{
 
 @media (max-width: 750px){
   .searchbar{
+    width: 90%;
+    margin: 10px auto;
+
+    margin-top: 260px;
+  }
+  
+  .searchbar_onClick{
     width: 90%;
     margin: 10px auto;
   }

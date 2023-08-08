@@ -10,6 +10,7 @@ const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");  
   const {searchShows}=useContext(ShowContext);
 
+
   const {alert, setAlert} =useContext(AlertsContext);
 
   const onSearchHandler = (e) =>{
@@ -19,13 +20,14 @@ const SearchBar = () => {
       setAlert("Please enter show's name", "danger");
     }
     else{
+      document.getElementById("searchBar").className='searchbar_onClick';
       searchShows(searchTerm);
     }
 
   }
   
   return (
-    <div className='searchbar'>
+    <div className='searchbar' id='searchBar'>
         {alert ? <Alert message={alert.message} type="danger"/> : null}
         <form className='searchBar_form'>
             <input 
