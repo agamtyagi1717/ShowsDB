@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from './favicon.png'
 
 const Navbar = () => {
   return (
@@ -8,7 +9,7 @@ const Navbar = () => {
             <nav className='navbar_nav'>
                 <h3 className='navbar_nav_links'>
                     <Link to="/">
-                        <img alt="logo" className='logo' src="./favicon.png"></img>
+                        <img alt="logo" className='logo' src={logo}></img>
                         <h3>ShowsDB</h3>
                     </Link>
                 </h3>

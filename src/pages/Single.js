@@ -36,7 +36,7 @@ const Singlepage = ({ match }) => {
             src={
               singleShow.image
                 ? singleShow.image.medium
-                : "https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg"
+                : "//images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tfGVufDB8fDB8fHww&w=1000&q=80"
             }
             alt={singleShow.name}
           />
@@ -52,22 +52,14 @@ const Singlepage = ({ match }) => {
               <strong>Status:</strong> {singleShow.status && singleShow.status}
             </p>
             <p>
+              <strong>Runtime:</strong> {singleShow.runtime && singleShow.runtime} minutes
+            </p>
+            <p>
               <strong>Rating:</strong>{" "}
               {singleShow.rating ? singleShow.rating.average : "No rating"}
             </p>
             <p>
-              <strong>Offical Site:</strong>{" "}
-              {singleShow.officalSite ? (
-                <a
-                  href={singleShow.officalSite}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {singleShow.officalSite}
-                </a>
-              ) : (
-                "No offical site"
-              )}
+              <strong>Language :</strong> {singleShow.language && singleShow.language}
             </p>
             <p className="summary">{singleShow.summary && removeTags(singleShow.summary)}</p>
           </div>

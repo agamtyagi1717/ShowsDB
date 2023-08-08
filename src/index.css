@@ -112,6 +112,7 @@ img{
     0 3px 1px 0 rgba(20, 23, 28, 0.1);
   margin: 1rem auto;
   cursor: pointer;
+  transition: all .14s ease-out;
 }
 
 .listitem:hover {
@@ -167,14 +168,13 @@ img{
     margin: 10px auto;
   }
 
-  /* img{
-    max-width: 100%;
-    max-height: 100%;
+  img{
+    width: 230px;
+    height: auto;
   }
   .listitem{
-    max-width: 100%;
-    max-height: 100%;
-  } */
+    width: 230px;
+  }
 
   .container{
     max-width: 97%;
