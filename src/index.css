@@ -11,8 +11,11 @@
 
 body{
   font-family: Arial, Helvetica, sans-serif;
-  background: rgba(0, 0, 0, 0.7);
-  transition: background-color .6s ease-out;
+  background-image: url('./assets/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0, 0, 0);
+  /* transition: background-color .6s ease-out; */
 }
 
 img{
@@ -83,7 +86,7 @@ img{
 .searchBar_form > input{
   width: 100%;
   padding: 10px 17px;
-  border: 1px solid #171717;
+  border: 2px solid #171717;
   color: #171717;
   outline-width: 0;
   font-size: 20px;
@@ -91,7 +94,7 @@ img{
 
 .btn{
   padding: 10px 17px;
-  border: 1px solid black;
+  /* border: 2px solid white; */
   background-color: #171717;
   color: white;
   margin: 1rem 0;
@@ -155,6 +158,9 @@ img{
 .singleshow {
   display: flex;
   margin: 2rem 0;
+  padding: 5px;
+  background-color: white;
+  border: 3px solid black;
 }
 
 .singleshow > img {

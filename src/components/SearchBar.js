@@ -21,7 +21,7 @@ const SearchBar = () => {
     }
     else{
       document.getElementById("searchBar").className='searchbar_onClick';
-      document.body.style.background = 'white';
+      // document.body.style.background = 'white';
       searchShows(searchTerm);
     }
 
