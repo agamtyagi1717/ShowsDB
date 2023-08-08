@@ -11,7 +11,7 @@
 
 body{
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url('./assets/background.jpg');
+  background-image: url('./assets/background2.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-color: rgba(0, 0, 0);
@@ -30,8 +30,12 @@ img{
 }
 
 .navbar{
+  /* width: 100%;
+  position:fixed;
+  top:0px; */
   padding: 1rem;
-  background: #171717;
+  background: #000000;
+  border-bottom: #ff7e96 2px solid;
 }
 
 .navbar_nav{
@@ -61,7 +65,7 @@ img{
   color: white;
   text-decoration: none;
   margin-left: 0.5rem;
-  border: 1px solid #171717;
+  border: 1px solid #000000;
 }
 
 .link_links a:hover{
@@ -84,10 +88,11 @@ img{
 }
 
 .searchBar_form > input{
+  text-align: center;
   width: 100%;
   padding: 10px 17px;
-  border: 2px solid #171717;
-  color: #171717;
+  border: 2px solid #000000;
+  color: #000000;
   outline-width: 0;
   font-size: 20px;
 }
@@ -95,7 +100,7 @@ img{
 .btn{
   padding: 10px 17px;
   /* border: 2px solid white; */
-  background-color: #171717;
+  background-color: #000000;
   color: white;
   margin: 1rem 0;
   font-size: 20px;
@@ -110,7 +115,7 @@ img{
 .alert{
   padding: 10px 17px;
   font-size: 15px;
-  border: 1px solid #171717;
+  border: 1px solid #000000;
   margin: 1rem 0;
 }
 
@@ -122,12 +127,19 @@ img{
 .listitem {
   text-decoration: none;
   width: 210px;
-  background: white;
+  background: rgba(0, 0, 0, 0.8);
+  /* padding: 6px; */
+  border: #ff7e96 solid 2px;
   box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
     0 3px 1px 0 rgba(20, 23, 28, 0.1);
   margin: 1rem auto;
   cursor: pointer;
   transition: all .14s ease-out;
+
+  >img{
+    width: 100%;
+    border-bottom: #ff7e96 solid 2px;
+  }
 }
 
 .listitem:hover {
@@ -135,11 +147,12 @@ img{
 }
 
 .listitem__info {
-  color: #171717;
+  color: #000000;
   text-align: center;
 }
 
 .info__name {
+  color: white;
   font-size: 1rem;
   padding: 5px;
 }
@@ -156,11 +169,12 @@ img{
 
 
 .singleshow {
+  color: white;
   display: flex;
   margin: 2rem 0;
   padding: 5px;
-  background-color: white;
-  border: 3px solid black;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #ff7e96;
 }
 
 .singleshow > img {

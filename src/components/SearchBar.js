@@ -33,9 +33,10 @@ const SearchBar = () => {
         <form className='searchBar_form'>
             <input 
                 type='text' 
-                placeholder='Search keyword(Example: "h", "game")' 
+                placeholder='Search any show' 
                 value={searchTerm}
                 onChange={(e)=>setSearchTerm(e.target.value)}
+                autoFocus
             />
             <button className='searchBar_button btn' onClick={onSearchHandler}>Search</button>
         </form>
