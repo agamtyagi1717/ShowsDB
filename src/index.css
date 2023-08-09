@@ -34,7 +34,8 @@ img{
   position:fixed;
   top:0px; */
   padding: 1rem;
-  background: #000000;
+  background: hsl(0 0% 0%/0.075);
+  backdrop-filter: blur(0.6rem);
   border-bottom: #ff7e96 2px solid;
 }
 
@@ -65,7 +66,7 @@ img{
   color: white;
   text-decoration: none;
   margin-left: 0.5rem;
-  border: 1px solid #000000;
+  /* border: 1px solid #000000; */
 }
 
 .link_links a:hover{
@@ -91,17 +92,19 @@ img{
   text-align: center;
   width: 100%;
   padding: 10px 17px;
-  border: 2px solid #000000;
-  color: #000000;
+  border: 2px solid #ff7e96;
+  background: hsl(0 0% 0%/0.85);
+  backdrop-filter: blur(0.3rem);
+  color: #7EFFE7;
   outline-width: 0;
   font-size: 20px;
 }
 
 .btn{
   padding: 10px 17px;
-  /* border: 2px solid white; */
-  background-color: #000000;
-  color: white;
+  border: 2px solid black;
+  background-color: #ff7e96;
+  color: black;
   margin: 1rem 0;
   font-size: 20px;
   cursor: pointer;
@@ -109,7 +112,7 @@ img{
 }
 
 .btn:hover{
-  color: #ff7e96;
+  color: #7EFFE7;
 }
 
 .alert{
@@ -127,7 +130,8 @@ img{
 .listitem {
   text-decoration: none;
   width: 210px;
-  background: rgba(0, 0, 0, 0.8);
+  background: hsl(0 0% 0%/0.6);
+  backdrop-filter: blur(0.4rem);
   /* padding: 6px; */
   border: #ff7e96 solid 2px;
   box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
@@ -138,7 +142,7 @@ img{
 
   >img{
     width: 100%;
-    border-bottom: #ff7e96 solid 2px;
+    border-bottom: #ff7e96 solid 1px;
   }
 }
 
@@ -173,7 +177,8 @@ img{
   display: flex;
   margin: 2rem 0;
   padding: 5px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background: hsl(0 0% 0%/0.6);
+  backdrop-filter: blur(0.6rem);
   border: 2px solid #ff7e96;
 }
 
